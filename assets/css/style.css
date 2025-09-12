@@ -66,10 +66,25 @@ h1, h2, h3 {
     font-family: 'Lato', sans-serif;
 }
 
+h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
 /* ---------- Contenu ---------- */
 
 body {
     font-family: 'Raleway', sans-serif;
+    color: var(--dark);
 }
 
-/* ---------- Zones ---------- */
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+    font-size: smaller;
+}
