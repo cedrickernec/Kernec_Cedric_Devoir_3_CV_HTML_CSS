@@ -1,0 +1,37 @@
+/*================================================================================
+PIED DE PAGE
+================================================================================== */
+
+/* ---------- Zone footer ---------- */
+
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 24px 24px 12px;
+    text-align: center;
+}
+
+/* ---------- Icônes sociales ---------- */
+
+.socials {
+    display: flex;
+    gap: 16px;
+}
+
+.socials img{
+    width: 30px;
+    height: 30px;
+}
+
+/* ---------- Texte de mise à jour ---------- */
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem;
+    font-style: italic;
+}
