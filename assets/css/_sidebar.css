@@ -1,0 +1,77 @@
+/*================================================================================
+SIDEBAR
+================================================================================== */
+
+/* ---------- Zone sidebar ---------- */
+
+aside {
+    background-color: var(--light-grey);
+    color: var(--dark);
+    padding: 24px;
+}
+
+/* ---------- Titres ---------- */
+
+aside h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+/* ---------- Listes 2 colonnes : "Compétences" + "Langues" ---------- */
+
+.list-split ul {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+    padding: 0;
+}
+
+.list-split li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------- Listes à puces : "Qualités" + "Centres d'intérêt" ---------- */
+
+.chips ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin: 0 0 20px;
+}
+
+.chips li::marker {
+    color: var(--primary);
+}
+
+/* ---------- Étoiles (Liste "Compétences") ---------- */
+
+.stars {
+    color: var(--primary);
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.stars[data-level="0"]::before {
+    content: "☆☆☆☆☆";
+}
+
+.stars[data-level="1"]::before {
+    content: "★☆☆☆☆";
+}
+
+.stars[data-level="2"]::before {
+    content: "★★☆☆☆";
+}
+
+.stars[data-level="3"]::before {
+    content: "★★★☆☆";
+}
+
+.stars[data-level="4"]::before {
+    content: "★★★★☆";
+}
+
+.stars[data-level="5"]::before {
+    content: "★★★★★";
+}
