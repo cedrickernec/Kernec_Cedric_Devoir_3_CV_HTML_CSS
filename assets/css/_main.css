@@ -1,0 +1,59 @@
+/*================================================================================
+CONTENU PRINCIPAL
+================================================================================== */
+
+#main-content {
+    padding: 24px;
+}
+
+/* ---------- Titres ---------- */
+
+#main-content h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+/* ---------- Mise en page du paragraphe "Profil" ---------- */
+
+main > section p {
+    margin: 0;
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+main > section p:last-of-type {
+    margin-bottom: 1rem;
+}
+
+/* ---------- Listes du contenu principal ---------- */
+
+main > section ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+main > section ul li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 16px;
+    align-items: baseline;
+}
+
+.formation-title em {
+    display: block;
+}
+
+.formation-title {
+    grid-column: 1;
+}
+
+main > section ul li div {
+    grid-column: 2;
+    justify-self: end;
+    white-space: nowrap;
+    color: var(--primary);
+}
