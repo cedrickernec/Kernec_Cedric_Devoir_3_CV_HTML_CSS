@@ -8,6 +8,19 @@ IMPORTS
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 /*================================================================================
+RESET
+================================================================================== */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+/*================================================================================
 PALETTE DE COULEURS
 ================================================================================== */
 
@@ -54,12 +67,8 @@ POLICES LOCALES
 }
 
 /*================================================================================
-BASE GLOBALE
+BASE + LAYOUT GLOBAUX
 ================================================================================== */
-
-html, body {
-    margin: 0;
-}
 
 /* ---------- Titres ---------- */
 
@@ -79,6 +88,8 @@ h3 {
 body {
     font-family: 'Raleway', sans-serif;
     color: var(--dark);
+    max-width: 1160px;
+    margin: 0 auto;
 }
 
 strong {
@@ -88,4 +99,20 @@ strong {
 em {
     font-style: italic;
     font-size: smaller;
+}
+
+/* ---------- Split des colonnes main-content et sidebar ---------- */
+
+main {
+    display: flex;
+}
+
+#main-content {
+    flex: 3;
+}
+
+aside {
+    flex: 0 0 33%;
+    min-width: 280px;
+    max-width: 320px;
 }
