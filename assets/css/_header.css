@@ -2,61 +2,71 @@
 HEADER
 ================================================================================== */
 
-/* ---------- Zone header ---------- */
+/* ---------- Zone header (avec split de colonnes) ---------- */
 
 header{
     display: flex;
     align-items: center;
-    gap: 24px;
-    padding: 32px 24px;
+    padding: 34px 0;
     background: var(--primary);
     color: var(--white);
+}
+
+header figure {
+    flex: 0 0 350px;
+    display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0 42px;
 }
 
 .header-text {
+    flex: 1 1 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 42px;
 }
 
 /* ---------- Photo de profil ---------- */
 
-header figure {
+.avatar {
     position: relative;
-    width: 135px;
-    height: 135px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 4px solid var(--white);
     overflow: hidden;
-    margin: 0;
 }
 
-header figure img {
-    width: 175%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 15%;
-    transform: translateX(-16%);
+.avatar img {
+    position: absolute;
+    width: 200%;
+    height: auto;
+    transform: translate(-20%, -10%);
+    display: block;
 }
 
-header figure::after {
+.avatar::after { /* Ombre interne */
     content: "";
     position: absolute;
     inset: 0;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px rgb(0, 0, 0, 0.3);
+    background: radial-gradient(circle, rgba(0,0,0,0) 55%, rgba(0,0,0,0.3) 100%);
     pointer-events: none;
 }
 
 /* ---------- Titres ---------- */
 
 h1 {
-    font-size: 3rem;
-    margin: 0;
+    font-size: 3.5rem;
+    margin: -6px 0 0;
 }
 
 h2 {
-    font-size: 1.4rem;
-    margin: 5px 0 25px;
+    font-size: 1.5rem;
+    margin: 4px 0 24px;
 }
 
 /* ---------- Liste de contact ---------- */
@@ -64,15 +74,17 @@ h2 {
 header ul {
     display: grid;
     list-style: none;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 25px;
-    margin: 15px 0 0;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px 46px;
+    margin: 0 0 3px;
+    padding: 0;
+    justify-content: center;
 }
 
 header li {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 
 header li img {
