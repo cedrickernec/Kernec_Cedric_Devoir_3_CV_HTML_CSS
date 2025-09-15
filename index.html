@@ -10,10 +10,12 @@
 <!--==================== HEADER ====================-->
     <header>
       <figure>
-        <img
-          src="assets/img/profile-photo.png"
-          alt="Photo de profil de Cédric Kernec"
-        />
+        <div class="avatar">
+            <img
+            src="assets/img/profile-photo.png"
+            alt="Photo de profil de Cédric Kernec"
+            />
+        </div>
       </figure>
 
       <div class="header-text">
@@ -21,7 +23,7 @@
         <h2>Développeur Web & Web mobile</h2>
 
         <!-- Informations personnelles -->
-        <ul>
+        <ul aria-label="Coordonnées et informations">
           <li>
             <img src="assets/img/icons/envelope.svg" alt="" aria-hidden="true"/>
             <a href="mailto:cedrickernec.ck@gmail.com"
@@ -57,16 +59,16 @@
                 <h3>Compétences</h3>
                 <ul>
                     <li>
-                        HTML <span class="stars" data-level="4" aria-label="4 sur 5"></span>
+                        <span class="label"><strong>HTML</strong></span> <span class="stars" data-level="4" aria-label="4 sur 5"></span>
                     </li>
                     <li>
-                        CSS <span class="stars" data-level="4" aria-label="4 sur 5"></span>
+                        <span class="label"><strong>CSS</strong></span> <span class="stars" data-level="4" aria-label="4 sur 5"></span>
                     </li>
                     <li>
-                        JavaScript <span class="stars" data-level="2" aria-label="2 sur 5"></span>
+                        <span class="label"><strong>JavaScript</strong></span> <span class="stars" data-level="2" aria-label="2 sur 5"></span>
                     </li>
                     <li>
-                        PHP <span class="stars" data-level="2" aria-label="2 sur 5"></span>
+                        <span class="label"><strong>PHP</strong></span> <span class="stars" data-level="2" aria-label="2 sur 5"></span>
                     </li>
                 </ul>
             </section>
@@ -76,13 +78,13 @@
                 <h3>Langues</h3>
                 <ul>
                     <li>
-                        Français <span>Langue maternelle</span>
+                        <span class="label">Français</span> <span>Langue maternelle</span>
                     </li>
                     <li>
-                        Anglais <span>Professionnel</span>
+                        <span class="label">Anglais</span> <span>Professionnel</span>
                     </li>
                     <li>
-                        Allemand <span>Notions</span>
+                        <span class="label">Allemand</span> <span>Notions</span>
                     </li>
                 </ul>
             </section>
@@ -148,8 +150,8 @@
                 </li>
                 <li>
                     <span class="formation-title">
-                        <strong>Bachelor Responsable de Communication</strong>
-                        <em>Brest Open Campus, Sup' de Com</em>
+                        <strong>Remise à niveau - Métiers du nuémrique</strong>
+                        <em>Lycée de la ville</em>
                     </span>
                     <div>
                         <time datetime="2018-01">Janvier 2018</time> - <time datetime="2019-06">Juin 2019</time>
@@ -157,20 +159,11 @@
                 </li>
                 <li>
                     <span class="formation-title">
-                        <strong>Titre Professionnel Designer Graphique</strong>
-                        <em>Greta Bretagne Sud (Vannes)</em>
+                        <strong>Baccalauréat</strong>
+                        <em>Lycée de la ville</em>
                     </span>
                     <div>
                         <time datetime="2016-09">Septembre 2016</time> - <time datetime="2017-06">Juin 2017</time>
-                    </div>
-                </li>
-                <li>
-                    <span class="formation-title">
-                        <strong>Baccalauréat Professionnel Comptabilité & Services Administratifs</strong>
-                        <em>Lycée Professionnel Émile Zola (Hennebont)</em>
-                    </span>
-                    <div>
-                        <time datetime="2010-09">Septembre 2010</time> - <time datetime="2013-06">Juin 2013</time>
                     </div>
                 </li>
             </ul>
@@ -180,8 +173,17 @@
             <ul>
                 <li>
                     <span class="formation-title">
-                        <strong>Graphiste</strong>
-                        <em>Conseil Départemental du Morbihan (Vannes)</em>
+                        <strong>Gestionnaire de paye</strong>
+                        <em>Société Truc & Machin</em>
+                    </span>
+                    <div>
+                        <time datetime="2017-03">Mars 2017</time> - <time datetime="2017-04">Avril 2017</time>
+                    </div>
+                </li>
+                <li>
+                    <span class="formation-title">
+                        <strong>Agent d'acceuil</strong>
+                        <em>Mairie de la ville</em>
                     </span>
                     <div>
                         <time datetime="2017-03">Mars 2017</time> - <time datetime="2017-04">Avril 2017</time>
@@ -194,17 +196,26 @@
             <ul>
                 <li>
                     <span class="formation-title">
-                        <strong>Responsable de gestion administrative et financière</strong>
-                        <em>Le Bon Tempo Productions</em>
+                        <strong>Agent d'acceuil</strong>
+                        <em>Mairie de la ville</em>
                     </span>
                     <div>
-                        <time datetime="2022-08">Août 2022</time> - <time datetime="2024-10">Octobre 2024</time>
+                        <time datetime="2017-03">Mars 2017</time> - <time datetime="2017-04">Avril 2017</time>
                     </div>
                 </li>
                 <li>
                     <span class="formation-title">
-                        <strong>Graphiste Indépendant</strong>
-                        <em>Zephyre Studio</em>
+                        <strong>Chauffeur-Livreur</strong>
+                        <em>Transport Nénés & Fils</em>
+                    </span>
+                    <div>
+                        <time datetime="2019-03">Mars 2019</time> - <time datetime="2023-11">Novembre 2023</time>
+                    </div>
+                </li>
+                <li>
+                    <span class="formation-title">
+                        <strong>Préparateur de commandes</strong>
+                        <em>Le slip français</em>
                     </span>
                     <div>
                         <time datetime="2019-03">Mars 2019</time> - <time datetime="2023-11">Novembre 2023</time>

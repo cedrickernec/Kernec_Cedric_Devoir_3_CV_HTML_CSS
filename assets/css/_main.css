@@ -3,29 +3,24 @@ CONTENU PRINCIPAL
 ================================================================================== */
 
 #main-content {
-    padding: 24px;
-}
-
-/* ---------- Titres ---------- */
-
-#main-content h3 {
-    font-size: 1.4rem;
-    color: var(--primary);
-    font-weight: 700;
-    margin: 0 0 12px;
+    padding: 52px 50px 75px;
 }
 
 /* ---------- Mise en page du paragraphe "Profil" ---------- */
 
 main > section p {
     margin: 0;
-    text-indent: 2rem;
+    text-indent: 1.4rem;
     text-align: justify;
+    line-height: 1.16;
 }
 
-main > section p:last-of-type {
-    margin-bottom: 1rem;
+/* ---------- Titres ---------- */
+
+#main-content h3:not(:first-of-type) {
+    margin-top: 28px;
 }
+
 
 /* ---------- Listes du contenu principal ---------- */
 
@@ -33,7 +28,8 @@ main > section ul {
     list-style: none;
     padding: 0;
     display: grid;
-    gap: 10px;
+    gap: 18px;
+    margin: 0;
 }
 
 main > section ul li {
