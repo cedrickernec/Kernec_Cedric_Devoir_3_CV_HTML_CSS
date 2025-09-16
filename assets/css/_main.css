@@ -2,12 +2,6 @@
 MAIN CONTENT
 ================================================================================== */
 
-/* ---------- Zone main-content ---------- */
-
-#main-content {
-    padding: 52px 50px 75px;
-}
-
 /* ---------- Mise en page du paragraphe "Profil" ---------- */
 
 main > section p {
@@ -22,7 +16,6 @@ main > section p {
 #main-content h3:not(:first-of-type) {
     margin-top: 28px;
 }
-
 
 /* ---------- Listes du contenu principal ---------- */
 
@@ -39,10 +32,6 @@ main > section ul li {
     grid-template-columns: 1fr auto;
     column-gap: 16px;
     align-items: baseline;
-}
-
-.section-title em {
-    display: block;
 }
 
 .section-title {
