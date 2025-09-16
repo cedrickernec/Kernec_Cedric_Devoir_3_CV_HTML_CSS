@@ -41,11 +41,11 @@ main > section ul li {
     align-items: baseline;
 }
 
-.formation-title em {
+.section-title em {
     display: block;
 }
 
-.formation-title {
+.section-title {
     grid-column: 1;
 }
 
