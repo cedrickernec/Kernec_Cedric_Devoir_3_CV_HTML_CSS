@@ -7,7 +7,6 @@ SIDEBAR
 aside {
     background-color: var(--light-grey);
     color: var(--dark);
-    padding: 52px 50px 75px;
 }
 
 aside section:not(:last-child) {
@@ -15,11 +14,6 @@ aside section:not(:last-child) {
 }
 
 /* ---------- Textes ---------- */
-
-aside h3 {
-    font-size: 1.4rem;
-    color: var(--primary);
-}
 
 .label {
     font-weight: 700;
