@@ -2,7 +2,7 @@
 HEADER
 ================================================================================== */
 
-/* ---------- Zone header (avec split de colonnes) ---------- */
+/* ---------- Zone header ---------- */
 
 header{
     display: flex;
@@ -11,6 +11,8 @@ header{
     background: var(--primary);
     color: var(--white);
 }
+
+/* ---------- Split 2 colonnes (même config. que main-content et sidebar dans style.css) ---------- */
 
 header figure {
     flex: 0 0 350px;

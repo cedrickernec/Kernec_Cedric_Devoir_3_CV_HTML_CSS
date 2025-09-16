@@ -110,7 +110,7 @@ em {
     font-size: 12px;
 }
 
-/* ---------- Split des colonnes main-content et sidebar ---------- */
+/* ---------- Split des colonnes main-content et sidebar (même config. que pour l'header dans_header.css) ---------- */
 
 main {
     display: flex;
