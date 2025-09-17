@@ -13,8 +13,20 @@ main > section p {
 
 /* ---------- Titres ---------- */
 
-#main-content h3:not(:first-of-type) {
+#main-content h3 {
     margin-top: 28px;
+}
+
+#main-content h3:first-of-type {
+    margin-top: 0;
+}
+
+#main-content h3 + ul { /* Soustraction du padding appliqué aux listes intéractive */
+    margin-top: calc(var(--item-pad-y)*-1);
+}
+
+#main-content ul + h3 {
+    margin-top: calc(28px - var(--item-pad-y));
 }
 
 /* ---------- Listes du contenu principal ---------- */
@@ -23,7 +35,7 @@ main > section ul {
     list-style: none;
     padding: 0;
     display: grid;
-    gap: 18px;
+    /*gap: 18px;*/ /* suppresion du gap pour intégrer un padding à l'intéractivité des listes */
     margin: 0;
 }
 
@@ -31,6 +43,7 @@ main > section ul li {
     display: grid;
     grid-template-columns: 1fr auto;
     column-gap: 16px;
+    padding: var(--item-pad-y) 0; /* Ajout d'espace de respirabilité pour l'intéractivité des listes */
     align-items: baseline;
 }
 
