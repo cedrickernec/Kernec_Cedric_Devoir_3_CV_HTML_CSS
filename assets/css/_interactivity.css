@@ -1,0 +1,54 @@
+/*================================================================================
+INTERACTIVITÉ (UI)
+================================================================================== */
+
+/* ---------- Intéractivité des listes du contenu principal (formations, stages, expérience professionnelle) ---------- */
+
+/* -- Barre latéral et background -- */
+
+main > section ul li {
+    position : relative;
+    overflow: hidden;
+    transition: background-color var(--anim-duration) var(--anim-easing);
+}
+
+main > section ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--primary);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform var(--anim-duration) var(--anim-easing);
+    pointer-events: none;
+}
+
+main > section ul li:hover,
+main > section ul li:focus-within {
+    background: var(--grey);
+}
+
+main > section ul li:hover::before,
+main > section ul li:focus-within::before {
+    transform: scaleY(1);
+}
+
+/* -- Décalage des textes -- */
+
+.section-title,
+main > section ul li div {
+    transition: transform var(--anim-duration) var(--anim-easing);
+}
+
+main > section ul li:hover .section-title,
+main > section ul li:focus-within .section-title {
+    transform: translateX(var(--anim-translate));
+}
+
+main > section ul li:hover div,
+main > section ul li:focus-within div {
+    transform: translateX(calc(var(--anim-translate)*-1));
+}
