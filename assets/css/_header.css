@@ -79,3 +79,9 @@ header li img {
     width: 20px;
     height: 20px;
 }
+
+header li a{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
