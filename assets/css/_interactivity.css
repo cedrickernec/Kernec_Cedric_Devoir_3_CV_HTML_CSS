@@ -52,3 +52,9 @@ main > section ul li:hover div,
 main > section ul li:focus-within div {
     transform: translateX(calc(var(--anim-translate)*-1));
 }
+
+/* ---------- Intéractivité de la photo de profil ---------- */
+
+.avatar a:hover {
+    cursor: zoom-in;
+}
