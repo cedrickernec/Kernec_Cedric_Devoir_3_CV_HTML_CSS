@@ -59,6 +59,15 @@ main > section ul li:focus-within div {
     cursor: zoom-in;
 }
 
+.avatar:focus-within {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
+.avatar a:focus-visible {
+    outline: none;
+}
+
 /* ---------- Intéractivité des icônes sociales présent dans le footer ---------- */
 
 .socials a img {
