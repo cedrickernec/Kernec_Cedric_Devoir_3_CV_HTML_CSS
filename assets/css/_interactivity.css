@@ -58,3 +58,14 @@ main > section ul li:focus-within div {
 .avatar a:hover {
     cursor: zoom-in;
 }
+
+/* ---------- Intéractivité des icônes sociales présent dans le footer ---------- */
+
+.socials a img {
+    transition: opacity var(--anim-duration) var(--anim-easing);
+}
+
+.socials a:hover img,
+.socials a:focus-visible img {
+    opacity: var(--anim-opacity);
+}

@@ -47,6 +47,7 @@ VARIABLES
     --anim-duration: 0.25s;
     --anim-easing: ease;
     --anim-translate: 12px;
+    --anim-opacity: 0.7;
 
     /* -- Liste du contenu principal -- */
     --item-pad-y: 9px;
