@@ -73,7 +73,7 @@ POLICES LOCALES
 
 @font-face {
   font-family: "Raleway";
-  src: url(../fonts/Raleway-Regular.woff);
+  src: url(../fonts/Raleway-Regular.woff2);
   src: url(../fonts/Raleway-Regular.ttf) format(truetype);
   src: url(../fonts/Raleway-Regular.otf) format(opentype);
   font-weight: 400;
@@ -83,7 +83,7 @@ POLICES LOCALES
 
 @font-face {
   font-family: "Raleway";
-  src: url(../fonts/Raleway-Italic.woff);
+  src: url(../fonts/Raleway-Italic.woff2);
   src: url(../fonts/Raleway-Italic.ttf) format(truetype);
   src: url(../fonts/Raleway-Italic.otf) format(opentype);
   font-weight: 400;
@@ -93,7 +93,7 @@ POLICES LOCALES
 
 @font-face {
   font-family: "Raleway";
-  src: url(../fonts/Raleway-Bold.woff);
+  src: url(../fonts/Raleway-Bold.woff2);
   src: url(../fonts/Raleway-Bold.ttf) format(truetype);
   src: url(../fonts/Raleway-Bold.otf) format(opentype);
   font-weight: 700;
@@ -141,7 +141,7 @@ h3::after,
 
 /* ---------- Contenu ---------- */
 
-body {
+.container {
   font-family: "Raleway", sans-serif;
   color: var(--dark);
   max-width: 1160px;
