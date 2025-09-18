@@ -5,55 +5,56 @@ MAIN CONTENT
 /* ---------- Mise en page du paragraphe "Profil" ---------- */
 
 main > section p {
-    margin: 0;
-    text-indent: 1.4rem;
-    text-align: justify;
-    line-height: 1.16;
+  margin: 0;
+  text-indent: 1.4rem;
+  text-align: justify;
+  line-height: 1.16;
 }
 
 /* ---------- Titres ---------- */
 
-#main-content h3 {
-    margin-top: 28px;
+#main-content h2 {
+  margin-top: 28px;
 }
 
-#main-content h3:first-of-type {
-    margin-top: 0;
+#main-content h2:first-of-type {
+  margin-top: 0;
 }
 
-#main-content h3 + ul { /* Soustraction du padding appliqué aux listes intéractive */
-    margin-top: calc(var(--item-pad-y)*-1);
+#main-content h2 + ul {
+  /* Soustraction du padding appliqué aux listes intéractive */
+  margin-top: calc(var(--item-pad-y) * -1);
 }
 
-#main-content ul + h3 {
-    margin-top: calc(28px - var(--item-pad-y));
+#main-content ul + h2 {
+  margin-top: calc(28px - var(--item-pad-y));
 }
 
 /* ---------- Listes du contenu principal ---------- */
 
 main > section ul {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    /*gap: 18px;*/ /* suppresion du gap pour intégrer un padding à l'intéractivité des listes */
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  /*gap: 18px;*/ /* suppresion du gap pour intégrer un padding à l'intéractivité des listes */
+  margin: 0;
 }
 
 main > section ul li {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    column-gap: 16px;
-    padding: var(--item-pad-y) 0; /* Ajout d'espace de respirabilité pour l'intéractivité des listes */
-    align-items: baseline;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 16px;
+  padding: var(--item-pad-y) 0; /* Ajout d'espace de respirabilité pour l'intéractivité des listes */
+  align-items: baseline;
 }
 
 .section-title {
-    grid-column: 1;
+  grid-column: 1;
 }
 
 main > section ul li div {
-    grid-column: 2;
-    justify-self: end;
-    white-space: nowrap;
-    color: var(--primary);
+  grid-column: 2;
+  justify-self: end;
+  white-space: nowrap;
+  color: var(--primary);
 }

@@ -5,33 +5,33 @@ FOOTER
 /* ---------- Zone footer ---------- */
 
 footer {
-    background-color: var(--primary);
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    padding: 20px 42px 12px;
-    text-align: center;
+  background-color: var(--primary);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 20px 42px 12px;
+  text-align: center;
 }
 
 /* ---------- Icônes sociales ---------- */
 
 .socials {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
-.socials img{
-    width: 30px;
-    height: 30px;
+.socials img {
+  width: 30px;
+  height: 30px;
 }
 
 /* ---------- Texte de mise à jour ---------- */
 
 footer p {
-    margin: 0;
-    font-size: 0.8rem;
-    font-style: italic;
+  margin: 0;
+  font-size: 0.8rem;
+  font-style: italic;
 }
